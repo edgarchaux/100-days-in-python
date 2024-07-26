@@ -88,7 +88,8 @@ print(frase_1+' '+frase_2)
 6. Recoger los datos e imprimirlos
 7. Utilizar saltos de línea donde creas conveniente'''
 #Variables de entrada
-saludo='Bienvenido/a '
+print ('Hola te voy a hacer algunas preguntas para conocerte mejor.')
+saludo='Bienvenido\a '
 nombre=input('¿Cómo te llamas?\n')
 edad=input('¿Qué edad tienes\n')
 pais=input('¿En qué país naciste?\n')
