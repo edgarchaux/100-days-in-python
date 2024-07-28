@@ -123,3 +123,11 @@ num_2=769.97
 texto='am I a string'
 decision=True
 print(f'El valor {num_2} es bastante más grande que {num_1}. ¿{texto}? The answer is {decision}.')
+#Project
+'''Construir una calculadora sencilla de exponentes.
+La calculadora deberá pedirle al usuario los números que quiere.'''
+print('---Calculadora de exponentes---')
+num_1=int(input('Introduzca el primer número\n '))
+num_2=int(input('Introduzca el segundo número\n '))
+resultado=num_1**num_2
+print(f'El resultado de {num_1} elevado a {num_2} es {resultado}.')
