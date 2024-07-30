@@ -44,3 +44,11 @@ if(color=='rojo' and forma=='circulo'):
     print(f'Es un {forma}{color}')
 else:
     print(f'No es un {forma}{color}')
+color='rojo'
+forma='circulo'
+tamaño='pequeño'
+if(color=='rojo' and forma=='circulo'and tamaño='pequeño'):
+    print(f'Es un {forma}{color}')
+else:
+    print(f'No es un {forma}{color}')
+#Práctica
