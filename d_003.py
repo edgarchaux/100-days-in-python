@@ -35,4 +35,12 @@ if(edad>=18):
         print('Elección inválida')
 else:
     print('ud es menor de edad, por favor retírese')
-#
+#Operadores lógicos
+'''Son operadores de and, or , not. and es para que se cumplan todas las sentencias, or es cuando se cumple alguna de las sentencias y not es cuando no se cumple ninguna
+Ejemplo:'''
+color='rojo'
+forma='circulo'
+if(color=='rojo' and forma=='circulo'):
+    print(f'Es un {forma}{color}')
+else:
+    print(f'No es un {forma}{color}')
