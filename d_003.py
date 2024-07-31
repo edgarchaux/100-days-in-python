@@ -109,3 +109,27 @@ if numero_1 == numero_2 and numero_3>numero_1:
 else:
     print('No cumple la condición')
 '''Respuesta: Se cumple la condición'''
+'''8. Encontrar los errores'''
+'''if numero>7:
+        print('El número es mayor que 7.')
+    else if numero==7
+        print('El número es igual a 7.')
+else:
+    print('El número es menor a 7.')
+Respuesta: No existe else if, existe elif
+9. Encontrar los errores
+numero=5
+if numero>7
+    print('El número es mayor que 7.')
+else
+    print('El número es menor o igual a 7.')
+Respuesta: después de la sentencia if t else, se debe poner :
+10. Encontrar los errores
+numero=5
+if numero=7:
+    print ('El número es mayor que 7.')
+else:
+    print('El número es menor o igual a 7.')
+Respuesta: El operador del if debe cambiarse a >'''
+#Project
+''''''
