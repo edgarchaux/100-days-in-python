@@ -105,6 +105,7 @@ numero_1=10
 numero_2=10
 numero_3=15
 if numero_1 == numero_2 and numero_3>numero_1:
-    print('Se puede la condición')
+    print('Se cumple la condición')
 else:
-    print('No cumble la condición')
+    print('No cumple la condición')
+'''Respuesta: Se cumple la condición'''
