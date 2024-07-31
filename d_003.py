@@ -132,4 +132,55 @@ else:
     print('El número es menor o igual a 7.')
 Respuesta: El operador del if debe cambiarse a >'''
 #Project
-''''''
+'''Hacer una calculadora con dos datos numéricos de sumas, restas, multiplicación, módulo y exponentes en la consola de python.'''
+'''Requisitos: título, el usuario escogerá primero la opción, informar al usuario la opción seleccionada, si la opción no está en el menú, avisarle
+se debe avisar si la opción marcada no está isponible, entrada de datos de tipo float, añadir redondeo a 2 cifras
+'''
+print('---CALCULADORA MEJORADA\n')
+operador=int(input('Hola, elija una opción: \n 1- Suma.\n 2- Resta.\n 3- Multiplicación.\n 4- División.\n 5- Módulo.\n 6- Exponente.\n Teclee un número y pulse ENTER:'))
+print(f'Ha elegido la opción"{operador}".')
+opcion=None
+if operador==1:
+    opcion='suma'
+    print(f'Usted escogió: {opcion}')
+    numero_1=round(float(input('Especifique el primer operando\n')),3)
+    numero_2=round(float(input('Especifique el segundo operando\n')),3)
+    resultado=round((numero_1+numero_2),3)
+    print(resultado)
+elif operador==2:
+    opcion='resta'
+    print(f'Usted escogió: {opcion}')
+    numero_1=round(float(input('Especifique el primer operando\n')),2)
+    numero_2=round(float(input('Especifique el segundo operando\n')),2)
+    resultado=numero_1-numero_2
+    print(resultado)
+elif operador==3:
+    opcion='multiplicación'
+    print(f'Usted escogió: {opcion}')
+    numero_1=round(float(input('Especifique el primer operando\n')),2)
+    numero_2=round(float(input('Especifique el segundo operando\n')),2)
+    resultado=numero_1*numero_2
+    print(resultado)
+elif operador==4:
+    opcion='división'
+    print(f'Usted escogió: {opcion}')
+    numero_1=round(float(input('Especifique el primer operando\n')),2)
+    numero_2=round(float(input('Especifique el segundo operando\n')),2)
+    resultado=numero_1/numero_2
+    print(resultado)
+elif operador==5:
+    opcion='módulo'
+    print(f'Usted escogió: {opcion}')
+    numero_1=round(float(input('Especifique el primer operando\n')),2)
+    numero_2=round(float(input('Especifique el segundo operando\n')),2)
+    resultado=numero_1%numero_2
+    print(resultado)
+elif operador==6:
+    opcion='exponente'
+    print(f'Usted escogió: {opcion}')
+    numero_1=round(float(input('Especifique el primer operando\n')),2)
+    numero_2=round(float(input('Especifique el segundo operando\n')),2)
+    resultado=numero_1**numero_2
+    print(resultado)
+else:
+    print('Error, opción inválida.\n Por favor, vuelva a ejecutar la calculadora.')
