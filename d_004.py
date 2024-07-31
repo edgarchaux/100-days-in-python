@@ -56,3 +56,36 @@ Dice la cantidad de elementos que tiene una lista o una tupla, por ejemplo:
 print(len(colores))
 print(len(colorest))'''
 #Práctica
+'''
+1.  Crear una lista llamada "lista_numeros" y almacenar los siguientes valores integer:
+10, 45,55,76'''
+lista_numeros=[int(10),int(45),int(55),int(76)]
+'''
+2.  Imprimir el valor 76 en la consola'''
+print(lista_numeros[3])
+'''
+3.  Utilizar el formateo de strings para imprimir esta frase en la consola: "El valor más pequeño en la lista es 10. el más grande, el 76."'''
+print(f"El valor más pequeño en la lista es {lista_numeros[0]}. el más grande, el {lista_numeros[3]}.")
+'''
+4.  Encontrar el o los fallos de la siguiente lista:
+lista_colores ["rojo", "azul", "verde",'amarillo']
+Respuesta: falta el igual para denominar a la lista
+5.  Encontrar el o los fallos de la siguiente lista:
+lista_colores=["rojo","azul", "verde","amarillo"]
+print(lista_colores(0))
+Respuesta: para imprimir la posición de una lista se usan los corchetes
+6.  Encontrar el o los fallos de la siguiente lista:
+lista_colores=["rojo","azul", "verde"]
+print(lista_colores[-0])
+print(lista_colores[-4])
+Respuesta: la posición -0 no existe y la posición -4 tampoco, ya que la lista no tiene suficientes elementos.
+7.  Imprimir en la consola el caracter "u"de azul'''
+lista_colores=["rojo","azul","verde","amarillo"]
+print(lista_colores[1][2])
+'''
+8.  Imprimir los 2 últimos países de la lista paises'''
+paises=["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua an Barbuda","Argentina","Armenia",
+        "Aruba","Australia","Austria","Azerbaijan","Bahamas","Zambia","Zimbawe"]
+print(paises[-2]+' , '+paises[-1])
+'''
+9.  '''
