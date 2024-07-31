@@ -19,7 +19,7 @@ colores[1]='dorado', cambia el color amarillo por dorado
 Para añadir nuevos elementos:
 colores.append('fucsia') añade el elemento fucsia al final de la lista
 Para añadir nuevo elemento en una posición específica
-colores.inser(2,'celeste'), inserta un nuevo elemento en la posición 2
+colores.insert(2,'celeste'), inserta un nuevo elemento en la posición 2
 Para eliminar elementos:
 colores.clear(), elimina todos los elementos de la lista
 Para eliminar elementos de la lista por su número de posición:
@@ -88,4 +88,39 @@ paises=["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua
         "Aruba","Australia","Austria","Azerbaijan","Bahamas","Zambia","Zimbawe"]
 print(paises[-2]+' , '+paises[-1])
 '''
-9.  '''
+9.  Añadir a la lista lista_colores los siguientes colores en los sitios donde se pide.
+gris- antes de rojo
+rosa- en último lugar
+naranja- entre azul y verde'''
+lista_colores=["rojo","azul","verde","amarillo"]
+lista_colores.insert(0,"gris")
+lista_colores.append("rosa")
+lista_colores.insert(3,"naranja")
+print(lista_colores)
+'''
+10. De la lista resultante del punto 9, eliminar los valores rojo, verde y amarillo'''
+lista_colores.pop(1)
+lista_colores.pop(3)
+lista_colores.pop(3)
+'''
+11. Duplicar la lista en una lista nueva'''
+lista_colores=["rojo","azul","verde","amarillo"]
+colores2=lista_colores
+'''
+12. Cuántas repeticiones del valor 10 hay en la lista numeros'''
+numeros=[10,45, 356, 10,10,10,46,67,45,10,10,54,65]
+print(numeros.count(10))
+'''
+13. Qué posición tiene el valor azerbaijan'''
+print(paises.index("Azerbaijan"))
+'''
+14. Ordenar de menor a mayor la lista numeros'''
+numeros.sort()
+print(numeros)
+'''
+15. Ordenar de mayor a menor la lista numeros'''
+numeros.sort(reverse=True)
+print(numeros)
+'''
+16. Mostrar la cantidad de elementos que tiene la lista paises'''
+print(len(paises))
