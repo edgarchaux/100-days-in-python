@@ -60,8 +60,8 @@ if not color=='azul' and not forma=='cuadrado':
 else:
     print('No se cumple la condición')
 #match
-error=input('Introduzca un código válido\n')
-'''match error:
+'''error=input('Introduzca un código válido\n')
+    match error:
     case '200':
         print('Todo ok')
     case '300':
@@ -136,51 +136,51 @@ Respuesta: El operador del if debe cambiarse a >'''
 '''Requisitos: título, el usuario escogerá primero la opción, informar al usuario la opción seleccionada, si la opción no está en el menú, avisarle
 se debe avisar si la opción marcada no está isponible, entrada de datos de tipo float, añadir redondeo a 2 cifras
 '''
-print('---CALCULADORA MEJORADA\n')
+print('---CALCULADORA MEJORADA---\n')
 operador=int(input('Hola, elija una opción: \n 1- Suma.\n 2- Resta.\n 3- Multiplicación.\n 4- División.\n 5- Módulo.\n 6- Exponente.\n Teclee un número y pulse ENTER:'))
 print(f'Ha elegido la opción"{operador}".')
 opcion=None
 if operador==1:
     opcion='suma'
     print(f'Usted escogió: {opcion}')
-    numero_1=round(float(input('Especifique el primer operando\n')),3)
-    numero_2=round(float(input('Especifique el segundo operando\n')),3)
-    resultado=round((numero_1+numero_2),3)
-    print(resultado)
+    numero_1=round(float(input('Especifique el primer operando\n')),2)
+    numero_2=round(float(input('Especifique el segundo operando\n')),2)
+    resultado=round((numero_1+numero_2),2)
+    print(f'La {opcion} de {numero_1} y {numero_2} da como resultado {resultado}')
 elif operador==2:
     opcion='resta'
     print(f'Usted escogió: {opcion}')
     numero_1=round(float(input('Especifique el primer operando\n')),2)
     numero_2=round(float(input('Especifique el segundo operando\n')),2)
-    resultado=numero_1-numero_2
-    print(resultado)
+    resultado=round(numero_1-numero_2,2)
+    print(f'La {opcion} de {numero_1} y {numero_2} da como resultado {resultado}')
 elif operador==3:
     opcion='multiplicación'
     print(f'Usted escogió: {opcion}')
     numero_1=round(float(input('Especifique el primer operando\n')),2)
     numero_2=round(float(input('Especifique el segundo operando\n')),2)
-    resultado=numero_1*numero_2
-    print(resultado)
+    resultado=round(numero_1*numero_2,2)
+    print(f'La {opcion} de {numero_1} y {numero_2} da como resultado {resultado}')
 elif operador==4:
     opcion='división'
     print(f'Usted escogió: {opcion}')
     numero_1=round(float(input('Especifique el primer operando\n')),2)
     numero_2=round(float(input('Especifique el segundo operando\n')),2)
-    resultado=numero_1/numero_2
-    print(resultado)
+    resultado=round(numero_1/numero_2,2)
+    print(f'La {opcion} de {numero_1} entre {numero_2} da como resultado {resultado}')
 elif operador==5:
     opcion='módulo'
     print(f'Usted escogió: {opcion}')
     numero_1=round(float(input('Especifique el primer operando\n')),2)
     numero_2=round(float(input('Especifique el segundo operando\n')),2)
-    resultado=numero_1%numero_2
-    print(resultado)
+    resultado=round(numero_1%numero_2,2)
+    print(f'El {opcion} de {numero_1} y {numero_2} da como resultado {resultado}')
 elif operador==6:
     opcion='exponente'
     print(f'Usted escogió: {opcion}')
     numero_1=round(float(input('Especifique el primer operando\n')),2)
     numero_2=round(float(input('Especifique el segundo operando\n')),2)
-    resultado=numero_1**numero_2
-    print(resultado)
+    resultado=round(numero_1**numero_2,2)
+    print(f'El {opcion} de {numero_1} a la {numero_2} da como resultado {resultado}')
 else:
     print('Error, opción inválida.\n Por favor, vuelva a ejecutar la calculadora.')
