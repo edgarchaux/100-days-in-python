@@ -68,5 +68,28 @@ paises=["United Arab Emirates","United Kingdom","Uruguay","Uzbekistan","Venezuel
 for i in range(0,5,1):
     print(f"->{paises[i]}<-")
 '''
-5.  Iterar la siguiente lista:'''
-numeros=[]
+5.  Iterar la siguiente lista ignorando el número 356 y 10:'''
+numeros=[10,45,356,10,10,10,46,67,45,10,10,43,10,65,10,10]
+numeros.sort()
+for i in numeros:
+    if i==10:
+        continue
+    elif i==356:
+        break
+    else:
+        print(f"El valor del elemento es: {i}")
+#project
+'''Hacer un programa para pedidos de pizza para ir añadiendo
+Requisitos:
+1.  Debe tener el título de la pizzería en el encabezado ->Pizzería PF<-
+2.  Guardar en una variable el dinero que el usuario quiere introducir
+3.  Crear una lista donde ir añadiendo ingredientes extra
+4.  Habrán mínimo 3 tipos de pizza para elegir
+5.  Cada pizza tendrá un coste diferente
+6.  El usuario podrá elegir sólo una piza
+7.  Una vez elegida la pizza se le informará al usuario el total que lleva por el momento
+8.  Se le debe pedir si quiere añadir o no ingredientes extra (estos harán subir el precio final)
+9.  Añade al menos 3 ingredientes extra. El usuario podrá elegir uno o varios de estos. No hay límite de ingredientes extra. Sise pasa del dinero se le dirá que no le llega y que vuelva a realizar el pedido
+10. Las pizzas e ingredientes tendrán sus precios almacenados en variables
+11. Con cada ingrediente extra, se debe ir sumando al total y mostrarselo al usuario con el cambio que le queda.
+12. Si el usuario no quiere ingrediente extra, puede pagar directamente sin añadir ninguno.'''
