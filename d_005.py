@@ -40,4 +40,32 @@ i=1
 while i<5:
     print(f"El valor del bucle es: {i}")
     i+=1
+Método lower()
+Convierte los strings en minúsculas
 '''
+#Práctica
+'''
+1. Crear un bucle for que imprima los valores de 7 al 14'''
+for i in range(7,15):
+    print( f"El valor del bucle es: {i}.")
+'''
+2.  Crear la misma salida que en el punto 1, pero con un bucle while'''
+i=7
+while i<15 and i>=7:
+    print(f"El valor del bucle es:{i}.")
+    i+=1
+'''
+3.  crear un bucle for que vaya del 0 al -50000, con decrecimientos de 500'''
+for i in range(0,-5001,-500):
+    print(f"El valor del bucle es: {i}")
+i=0
+while i>=-5000:
+    print(f"El valor del bucle es: {i}")
+    i-=500
+'''
+4.  Iterar en un ciclo for la lista paises'''
+paises=["United Arab Emirates","United Kingdom","Uruguay","Uzbekistan","Venezuela","Vietnam"]
+for i in range(0,5,1):
+    print(f"->{paises[i]}<-")
+'''
+5.  Iterar:'''
