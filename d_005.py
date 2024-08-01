@@ -68,4 +68,5 @@ paises=["United Arab Emirates","United Kingdom","Uruguay","Uzbekistan","Venezuel
 for i in range(0,5,1):
     print(f"->{paises[i]}<-")
 '''
-5.  Iterar:'''
+5.  Iterar la siguiente lista:'''
+numeros=[]
