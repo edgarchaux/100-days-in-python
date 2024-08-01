@@ -88,8 +88,44 @@ Requisitos:
 5.  Cada pizza tendrá un coste diferente
 6.  El usuario podrá elegir sólo una piza
 7.  Una vez elegida la pizza se le informará al usuario el total que lleva por el momento
-8.  Se le debe pedir si quiere añadir o no ingredientes extra (estos harán subir el precio final)
+8.  Se le debe pedir al cliente si quiere añadir o no ingredientes extra (estos harán subir el precio final)
 9.  Añade al menos 3 ingredientes extra. El usuario podrá elegir uno o varios de estos. No hay límite de ingredientes extra. Sise pasa del dinero se le dirá que no le llega y que vuelva a realizar el pedido
 10. Las pizzas e ingredientes tendrán sus precios almacenados en variables
 11. Con cada ingrediente extra, se debe ir sumando al total y mostrarselo al usuario con el cambio que le queda.
 12. Si el usuario no quiere ingrediente extra, puede pagar directamente sin añadir ninguno.'''
+print("->Pizzería PF<-")
+cash=float(input("¿Cuánto dinero desea cargar?\n"))
+topics=[]
+extra_topics=["1. cheese", "2. jam", "3. onion"]
+pizza=["1. chicken","2. cheese", "3. pepperoni"]
+pizza_costs=[10,9.50,9.75]
+extra_pay=[1.2,2.3,2.1]
+pay= 0
+order=int(input(f"Por favor digite el número de la pizza que desea elegir: {pizza}\n"))
+if order==1 or order==2 or order ==3:
+    if order==1:
+        pay+=pizza_costs[1]
+    elif order==2:
+        pay+=pizza_costs[2]
+    else:
+        pay+=pizza_costs[3]
+    print(f"Hasta el momento el valor de su compra es de: {pay}")
+    print(f"Ud cargó {cash} pesos, su pedido es de {pay} por tanto le quedan {cash-pay}")
+    extra=int(input(f"¿Desea añadir algún ingrediente extra? 1 sí 2 No\n"))
+    if extra==1:
+        while extra==1:
+            extra_topic=int(input(f"Ingrese el código del ingrediente que desea: {extra_topics}\n"))
+            if extra_topic==1:
+                pay+=extra_pay[0]
+            elif extra_topic==2:
+                pay+=extra_pay[1]
+            elif extra_topic==3:
+                pay+=extra_pay[2]
+            else:
+                print("opción iválida")
+                break         
+            extra=int(input(f"¿Desea añadir algún otro ingrediente extra? 1 sí 2 No\n"))
+else:
+    print("Opción no válida")
+print(f"El valor de su orden es de: {pay}, ud cargó {cash}, su cambio es de: {cash-pay} pesos.")
+print("Um prazer")
