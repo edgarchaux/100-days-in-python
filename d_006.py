@@ -69,19 +69,22 @@ def calcular(num1,num2,operacion):
     elif operacion==6:
         return num1**num2
     else:
-        return "operación inavilitada"
+        return "operación inhabilitada"
+operadores=["Suma","Resta", "Multiplicación", "División", "Módulo", "Exponente"]
+indice=["1","2","3","4","5","6"]
+
 exit=int(input("Desea realizar alguna operación?\n 1. Sí 2. No\n"))
 operacion=0
 num1=0
 num2=0
 while exit==1:
-    if(exit==1):
-        operador=input("Digite el número de la operación que desea realizar\n 1. suma 2. resta 3. multiplicación 4. división 5. módulo 6. exponente\n")
-        num1=input("Ingrese el primer número de la operación\n")
-        num2=input("Ingrese el segundo número de la operación\n")
-        res=calcular(num1,num2,operador)
-        print(res)
-    else:
-        break
-    res
-exit=input("Desea realizar alguna otra operación?\n 1. Sí 2. No\n")
+    for i in range(0,5):
+        print(f"{indice[i]}-    {operadores[i]}")
+    operador=int(input("Digite el número de la operación que desea realizar\n"))
+    print(f"Ha elegido la opción {operadores[operador-1]}")
+    num1=float(input(f"Ingrese el primer número de {operadores[operador-1]}\n"))
+    num2=float(input(f"Ingrese el segundo número de {operadores[operador-1]}\n"))
+    res=calcular(num1,num2,operador)
+    print (f"El resultado de {operadores[operador-1]} es {res}")
+    exit=int(input("Desea realizar alguna otra operación?\n 1. Sí 2. No\n"))
+print("Que tenga un buen día")
