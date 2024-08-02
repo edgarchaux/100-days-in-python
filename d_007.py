@@ -25,7 +25,7 @@ diccionario={
     }
 print(diccionario[3])
 Para añadir nuevos elementos al diccionario:
-microsoft_office["ourlook"]="Nunca supe para que servía
+microsoft_office["ourlook"]="Nunca supe para que servía"
 print(microsoft_office["outlook"])
 diccionarios vacios
 Se usan para que el usuario vaya llenando datos
@@ -53,5 +53,32 @@ for programa in microsoft_office:
 poner la primera letra en mayúscula de manera automática
 sintaxis
 for program in microsoft_office
-    print(f"program.capitalize()")
+    print(f"program.capitalize(): microsoft_office[programa]")
+El método capitalize vuelve mayúscula la primera letra de un dato
+Sets
+los sets son listas desordenadas, sin índice de posición, por tanto, sus elementos varian de posición.
+en la misma llamada no varían, pero a la siguiente sí. Por ejemplo:
+sintaxis
+animales={"pez","gato","tigre","león"}
+print(animales)
+en los sets los datos repetidos cuentan como uno sólo
 '''
+#Parte práctica
+'''
+1.  Imprimir el directorio colores'''
+colores={
+    1: "rojo",
+    2: "azul",
+    3: "verde",
+    4: "amarillo"
+}
+print(colores)
+'''
+2.  Imprimir cada uno de los valores del diccionario colores en una línea diferente'''
+print(f"program.capitalize(): microsoft_office[programa]")
+for i in colores:
+    print(f"{i}-{colores[i].capitalize()}")
+'''
+3.  Añadir otro color al diccionario'''
+colores[5]="negro"
+print(colores)
