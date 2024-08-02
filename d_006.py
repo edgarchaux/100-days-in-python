@@ -88,3 +88,10 @@ while exit==1:
     print (f"El resultado de {operadores[operador-1]} es {res}")
     exit=int(input("Desea realizar alguna otra operación?\n 1. Sí 2. No\n"))
 print("Que tenga un buen día")
+def calculadora_auto(num1,num2):
+    resultados=[float(num1+num2),float(num1-num2),float(num1*num2),float(num1/num2) ,float(num1%num2),float(num1**num2)]
+    operacion_resultados=["suma: ","resta: ","multiplicación: ", "división: ", "módulo: ","exponente: "]
+    for i in range (0,5):
+        respuesta=print(f"{operacion_resultados[i]}{round(resultados[i],2)}")
+    return(respuesta)
+calculadora_auto(2,3)
