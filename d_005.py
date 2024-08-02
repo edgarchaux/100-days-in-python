@@ -99,14 +99,14 @@ topics=[]
 extra_topics=["Queso", "Champiñones", "Pepperoni"]
 pizza=["Margarita","Jamón y queso", "Cuatro quesos"]
 pizza_costs=[7.85,9.65,9.95]
-chicken_cost=10
-cheese_cost=9.50
-pepperoni_cost=9.75
+margarita_cost=7.85
+jamon_cost=9.65
+queso_cost=9.95
 extra_pay=[1.2,2.3,2.1]
 pay= 0
-extra_cost=0
-extra_car=str()
-order=int(input(f"Por favor digite el número de la pizza que desea elegir:\n 1 - Margarita - 7.85$\n 2 - Jamón y queso - 9.65$\n 3 - Cuatro quesos - 9.95$\n"))
+extra_cost=[]
+extra_car=[]
+order=int(input(f"Por favor digite el número de la pizza que desea elegir:\n 1 - Margarita - {margarita_cost}$\n 2 - Jamón y queso - {jamon_cost}$\n 3 - Cuatro quesos - {queso_cost}$\n"))
 print(f"Ha elegido la pizza {pizza[order-1]}")
 pay_pizza=pizza_costs[order-1]
 if (order==1 or order==2 or order ==3)and cash>=pay_pizza:
@@ -122,26 +122,30 @@ if (order==1 or order==2 or order ==3)and cash>=pay_pizza:
                 break
             if extra_topic==1:
                 pay+=extra_pay[0]
-                extra_cost+=extra_pay[0]
-                extra_car+=str(extra_topics[extra_topic-1])
+                extra_cost.append(extra_pay[0])
+                extra_car.append(extra_topics[extra_topic-1])
             elif extra_topic==2:
                 pay+=extra_pay[1]
-                extra_cost+=extra_pay[1]
-                extra_car+=str(extra_topics[extra_topic-1])
+                extra_cost.append(extra_pay[1])
+                extra_car.append(extra_topics[extra_topic-1])
             elif extra_topic==3:
                 pay+=extra_pay[2]
-                extra_cost+=extra_pay[2]
-                extra_car+=str(extra_topics[extra_topic-1])
+                extra_cost.append(extra_pay[2])
+                extra_car.append(extra_topics[extra_topic-1])
             else:
                 print("opción iválida")
                 break
-            print(f"el valor de los adicionales es de: {extra_cost}")
-            print(f"El valor de su orden es de: {pay}, ud cargó {cash}, su cambio es de: {cash-pay} pesos.")
+            print(f"El valor de los adicionales es de:")
+            for i in range(0,len(extra_cost)):
+                print(f"- {extra_car[i]}    {extra_cost[i]}$-")
+            print(f"El valor de su orden es de: {round(pay,2)}, ud cargó {round(cash)}, su cambio es de: {round(cash-pay)} pesos.")
             extra=int(input(f"¿Desea añadir algún otro ingrediente extra? 1 sí 2 No\n"))
     print("De acuerdo, no se añade nada más")
 else:
     print("Opción no válida")
 print("---Su pedido---")
-print(f"El valor de su orden es de: {round(pay,2)}\n ud cargó {round(cash,2)}, su cambio es de: {round(cash-pay,2)} pesos.")
-print(f"Pizza de {pizza[order-1]}\ncon adicionales de {extra_car} Por valor de {round(extra_cost,2)}")
+print(f"El valor de su orden es de: {round(pay,2)}\nud cargó {round(cash,2)}, su cambio es de: {round(cash-pay,2)} pesos.")
+print(f"Pizza de {pizza[order-1]}\ncon adicionales de:")
+for i in range(0,len(extra_cost)):
+    print(f"-{extra_car[i]}     {extra_cost[i]} $-")
 print("Disfrute su pedido")
