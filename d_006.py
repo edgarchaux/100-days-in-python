@@ -72,7 +72,6 @@ def calcular(num1,num2,operacion):
         return "operación inhabilitada"
 operadores=["Suma","Resta", "Multiplicación", "División", "Módulo", "Exponente"]
 indice=["1","2","3","4","5","6"]
-
 exit=int(input("Desea realizar alguna operación?\n 1. Sí 2. No\n"))
 operacion=0
 num1=0
