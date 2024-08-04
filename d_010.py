@@ -18,4 +18,19 @@ Lambda no se puede hacer si se requiere más de una expresión
 '''
 #Parte práctica
 '''
-1.  '''
+1.  Crear con una función lambda una calculadora de áreas de círculo cuyo único parámetro sea el radio'''
+radio=int(input("Introduzca el radio del círculo en cm\n"))
+pi=3.14
+area=round((lambda radio: pi*radio**2)(radio),2)
+print(f"El área del círculo es: {area} cms")
+'''
+2.  Crear una funcipon lambda para saludar por tu nombre'''
+nombre=input(str("¿Cómo te llamas?\n"))
+saludo=(lambda nombre:'bienvenido|a, '+nombre)(nombre)
+print(saludo)
+'''
+3.  Mediante una función lambda imprimir: El color se encuentra en la posición 1 de la lista'''
+colores=["rojo", "azul","verde","amarillo"]
+color=str(input("¿Qué color quieres buscar?\n"))
+busqueda=(lambda color: colores.index(color))(color)
+print(f"El color {color} se encuentra en la posición {busqueda} de la lista")
