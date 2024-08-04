@@ -28,14 +28,14 @@ El método grid sirve para posicionar los elementos en el orden de aparición de
 from tkinter import *
 root=Tk()
 root.title("concentración")
-root.mainloop()
 '''redimensionar a 600px de y 450p'''
-root.geometry("800x600")
+root.geometry("600x450")
 '''
 6.  que la pantalla aparezca en 50 70'''
 root.geometry("800x600+50+70")
 '''7. crear que un par de etiquetas'''
-saludo=Label(root, "vete ya")  
+saludo=Label(root, text="vete ya")  
 '''
 8.   mostrar con grit '''
-mensaje.qroot(row=0,colums=1  )
+saludo.grid(row=0,column=0 )
+root.mainloop()
