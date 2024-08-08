@@ -25,3 +25,32 @@ Botón
 boton_1=Button(root, text="enviar", command=pulsar_boton).pack()
 Bucle de ejecución
 root.mainloop()'''
+#Parte práctica
+'''
+1.  Crear 4 botones'''
+from tkinter import *
+root=Tk()
+root.title("TK")
+def pulsar(numero):
+    aviso=Label(root,text=f"ha pulsado el botón {numero}").pack()
+    aviso=Pack()
+boton_1= Button(root, text="botón 1", command=lambda:pulsar(1)).pack()
+boton_1= Button(root, text="botón 2", command=lambda:pulsar(2)).pack()
+boton_1= Button(root, text="botón 3", command=lambda:pulsar(3)).pack()
+boton_1= Button(root, text="botón 4", command=lambda:pulsar(4)).pack()
+
+root.mainloop()
+'''
+2. colocar una etiqueta a mostrar en cada botón'''
+'''
+3.  '''
+Label(root, text="Nombre").grid(column=0,row=0)
+nombre=Entry(root)
+nombre.grid(column=1, row=0)
+Label(root, text="Edad").grid(column=1,row=0)
+Label(root, text="Edad").grid(column=0,row=0)
+nombre=Entry(root)
+nombre.grid(column=1, row=0)
+Label(root, text="Edad").grid(column=1,row=0)
+edad=Entry(root)
+edad.grid(column=1, row=1)
