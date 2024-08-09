@@ -46,4 +46,4 @@ for i in range(len(colores)):
 num_1=10
 num_2=34.50
 result=num_1*num_2
-print("El resultado de %i * %f da como resultado: %f"%(num_1,num_2,result))
+print("La multiplicación de %i * %f da como resultado: %f."%(num_1,num_2,result))
